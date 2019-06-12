@@ -1,3 +1,2 @@
-FROM ubuntu:16.04
-RUN apt-get update
-RUN apt-get install apache2 -
+FROM nginx
+ADD . /usr/share/nginx/html
